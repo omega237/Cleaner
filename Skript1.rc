@@ -1,0 +1,170 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CLEANERDLG DIALOG DISCARDABLE  0, 0, 267, 194
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Cleaner Version 1.0"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Do It!",IDOK,210,173,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,154,173,50,14
+    PUSHBUTTON      "?",IDC_SHOWOPTIONS,7,173,17,14
+    LTEXT           "Cleaner Version 1.0",IDC_HEADER,7,7,206,27,WS_DISABLED
+    ICON            "",IDC_STATIC,235,10,20,20
+    CONTROL         "List1",IDC_FILELIST,"SysListView32",LVS_REPORT | 
+                    LVS_SORTASCENDING | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,7,34,253,97
+    LTEXT           "Searchpath:",IDC_STATIC,7,135,43,8
+    LTEXT           "Searchmask:",IDC_STATIC,7,151,42,8
+    LTEXT           "Found:",IDC_STATIC,153,135,23,8
+    LTEXT           "Size:",IDC_STATIC,153,151,16,8
+    LTEXT           "",IDC_PATH,53,135,90,8
+    LTEXT           "",IDC_MASK,53,151,92,8
+    LTEXT           "file(s)",IDC_STATIC,232,135,28,8
+    LTEXT           "",IDC_NUMFILES,183,135,42,8
+    LTEXT           "MB",IDC_STATIC,232,151,28,8
+    LTEXT           "",IDC_FILESIZE,183,151,42,8
+END
+
+IDD_OPTIONS DIALOG DISCARDABLE  0, 0, 186, 113
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Cleaner Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,92,50,14
+    LTEXT           "Search path:",IDC_STATIC,7,10,42,8
+    LTEXT           "Search mask:",IDC_STATIC,7,27,44,8
+    EDITTEXT        IDC_OPATH,61,7,118,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_OMASK,61,25,118,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Recurse subdirectories",IDC_ORECURSE,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_DISABLED | WS_TABSTOP,
+                    61,45,118,10
+    CONTROL         "Delete files from harddisk",IDC_ODELETE,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_DISABLED | WS_TABSTOP,
+                    61,57,118,10
+    CONTROL         "Ignore write-protection",IDC_OIGNORE,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_DISABLED | WS_TABSTOP,
+                    61,71,118,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME | NOT WS_VISIBLE,7,
+                    46,54,60
+END
+
+IDD_SEARCHING DIALOGEX 0, 0, 186, 39
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CLIPSIBLINGS | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Searching..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Searching...",IDC_STATIC,7,7,39,8
+    LTEXT           "Static",IDC_PATH,7,15,172,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CLEANERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        VERTGUIDE, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+        HORZGUIDE, 34
+        HORZGUIDE, 143
+        HORZGUIDE, 159
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        VERTGUIDE, 61
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_SEARCHING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 32
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
